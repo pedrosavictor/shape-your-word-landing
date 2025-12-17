@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Calm Through Clay | The Pottery Academy</title>
+    <meta name="description" content="A free 90-minute online workshop where you'll make Christmas ornaments with your hands — and finally give your racing mind a rest.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="pottery-academy-logo.png">
+    <link rel="apple-touch-icon" href="pottery-academy-logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================================
+           CSS VARIABLES & RESET
+           ============================================ */
+        :root {
+            /* Color Palette - Warm, Earthy */
+            --bg-primary: #FDF8F3;
+            --bg-secondary: #FFF9F5;
+            --bg-accent: #FDEEE8;
+            --bg-sage: #E8F0E2;
+            --bg-card: #FFFFFF;
+            --text-body: #3D3835;
+            --text-heading: #2D2926;
+            --text-light: #6B6560;
+            --accent-terracotta: #E07B4C;
+            --accent-terracotta-hover: #C96A3E;
+            --accent-terracotta-light: #FDEEE8;
+            --accent-sage: #7BA05B;
+            --accent-sage-light: #E8F0E2;
+            --border-dark: #2D2926;
+            --border-subtle: #E8E2D9;
+            --white: #FFFFFF;
+            --black: #2D2926;
+
+            /* Typography */
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Lato', -apple-system, sans-serif;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+
+            /* Border Radius */
+            --radius-sm: 12px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+            --radius-full: 9999px;
+
+            /* Shadows - Hard Style */
+            --shadow-hard: 5px 5px 0 var(--black);
+            --shadow-hard-hover: 7px 7px 0 var(--black);
+            --shadow-hard-sm: 3px 3px 0 var(--black);
+
+            /* Layout */
+            --max-width: 1200px;
+            --nav-height: 72px;
+        }
+
+        /* Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 17px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--text-body);
+            background-color: var(--bg-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ============================================
+           TYPOGRAPHY
+           ============================================ */
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            color: var(--text-heading);
+            font-weight: 600;
+            line-height: 1.15;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.8rem);
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .italic-accent {
+            font-style: italic;
+            color: var(--accent-terracotta);
+        }
+
+        /* ============================================
+           LAYOUT
+           ============================================ */
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        .container-narrow {
+            max-width: 800px;
+        }
+
+        .section {
+            padding: var(--space-2xl) 0;
+        }
+
+        @media (min-width: 768px) {
+            .section {
+                padding: var(--space-3xl) 0;
+            }
+        }
+
+        .section-full {
+            width: 100%;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            background: var(--bg-primary);
+            border-bottom: 2px solid var(--border-subtle);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.6rem 1.5rem;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-decoration: none;
+            background: var(--black);
+            color: var(--white);
+            border-radius: var(--radius-full);
+            transition: all 0.2s ease;
+        }
+
+        .nav-cta:hover {
+            background: var(--accent-terracotta);
+            transform: scale(1.02);
+        }
+
+        /* Spacer for fixed nav */
+        .nav-spacer {
+            height: var(--nav-height);
+        }
+
+        /* ============================================
+           BUTTONS
+           ============================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-decoration: none;
+            border: 3px solid var(--black);
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-height: 52px;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-terracotta);
+            color: var(--white);
+            box-shadow: var(--shadow-hard);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-terracotta-hover);
+            transform: translate(-2px, -2px);
+            box-shadow: var(--shadow-hard-hover);
+        }
+
+        .btn-primary:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 var(--black);
+        }
+
+        .btn-secondary {
+            background-color: var(--white);
+            color: var(--text-heading);
+            box-shadow: var(--shadow-hard);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--bg-accent);
+            transform: translate(-2px, -2px);
+            box-shadow: var(--shadow-hard-hover);
+        }
+
+        /* ============================================
+           HERO SECTION - Full Background Image
+           ============================================ */
+        .hero {
+            position: relative;
+            min-height: calc(100vh - var(--nav-height));
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('hero-bg.png');
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+        }
+
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                to right,
+                rgba(253, 248, 243, 0.95) 0%,
+                rgba(253, 248, 243, 0.85) 40%,
+                rgba(253, 248, 243, 0.4) 70%,
+                rgba(253, 248, 243, 0.2) 100%
+            );
+        }
+
+        @media (max-width: 768px) {
+            .hero-bg::after {
+                background: linear-gradient(
+                    to bottom,
+                    rgba(253, 248, 243, 0.9) 0%,
+                    rgba(253, 248, 243, 0.7) 50%,
+                    rgba(253, 248, 243, 0.5) 100%
+                );
+            }
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 1;
+            padding: var(--space-2xl) 0;
+        }
+
+        .hero-content {
+            max-width: 550px;
+        }
+
+        .hero h1 {
+            margin-bottom: var(--space-md);
+        }
+
+        .hero-subheadline {
+            font-size: 1.15rem;
+            color: var(--text-body);
+            margin-bottom: var(--space-lg);
+            max-width: 480px;
+        }
+
+        /* Event Detail Chips */
+        .hero-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: var(--space-lg);
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-full);
+            border: 2px solid var(--black);
+            box-shadow: var(--shadow-hard-sm);
+        }
+
+        .hero-cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+        }
+
+        .hero-reassurance {
+            font-size: 0.9rem;
+            color: var(--text-body);
+            font-style: italic;
+        }
+
+        /* ============================================
+           SCROLLING TICKER
+           ============================================ */
+        .ticker {
+            background: var(--black);
+            padding: var(--space-sm) 0;
+            overflow: hidden;
+        }
+
+        .ticker-track {
+            display: flex;
+            animation: ticker 35s linear infinite;
+            width: max-content;
+        }
+
+        .ticker-content {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xl);
+            padding-right: var(--space-xl);
+        }
+
+        .ticker-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            white-space: nowrap;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--bg-primary);
+        }
+
+        .ticker-star {
+            color: var(--accent-terracotta);
+            font-size: 1.1rem;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* ============================================
+           BENEFITS SECTION (Replaces Stats)
+           ============================================ */
+        .benefits-section {
+            background: var(--bg-secondary);
+        }
+
+        .benefits-header {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .benefits-header p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-top: var(--space-sm);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .benefit-card {
+            background: var(--bg-card);
+            border: 3px solid var(--black);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-hard);
+            padding: var(--space-lg);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: var(--shadow-hard-hover);
+        }
+
+        .benefit-icon {
+            width: 56px;
+            height: 56px;
+            margin-bottom: var(--space-md);
+            background: var(--accent-terracotta-light);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            border: 2px solid var(--black);
+        }
+
+        .benefit-card h3 {
+            margin-bottom: var(--space-xs);
+            color: var(--text-heading);
+        }
+
+        .benefit-card p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        /* ============================================
+           EXPERIENCE SECTION
+           ============================================ */
+        .experience-section {
+            background: var(--bg-primary);
+        }
+
+        .experience-header {
+            margin-bottom: var(--space-xl);
+        }
+
+        .experience-header p {
+            font-size: 1.1rem;
+            color: var(--text-body);
+            margin-top: var(--space-sm);
+            max-width: 600px;
+        }
+
+        .experience-grid {
+            display: grid;
+            gap: var(--space-md);
+        }
+
+        @media (min-width: 768px) {
+            .experience-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .experience-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: var(--space-lg);
+            border: 3px solid var(--black);
+            box-shadow: var(--shadow-hard);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .experience-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: var(--shadow-hard-hover);
+        }
+
+        .experience-card h3 {
+            color: var(--accent-terracotta);
+            margin-bottom: var(--space-sm);
+            font-style: italic;
+            font-size: 1.15rem;
+        }
+
+        .experience-card p {
+            color: var(--text-body);
+            font-size: 0.95rem;
+        }
+
+        /* ============================================
+           QUALIFIER SECTION (Who This Is For)
+           ============================================ */
+        .qualifier-section {
+            background: var(--bg-sage);
+        }
+
+        .qualifier-section h2 {
+            margin-bottom: var(--space-xl);
+            text-align: center;
+        }
+
+        .qualifier-grid {
+            display: grid;
+            gap: var(--space-lg);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 640px) {
+            .qualifier-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .qualifier-box {
+            padding: var(--space-lg);
+            border-radius: var(--radius-md);
+            border: 3px solid var(--black);
+            box-shadow: var(--shadow-hard);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .qualifier-box:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: var(--shadow-hard-hover);
+        }
+
+        .qualifier-box--yes {
+            background: var(--white);
+        }
+
+        .qualifier-box--no {
+            background: var(--accent-terracotta-light);
+        }
+
+        .qualifier-box h3 {
+            margin-bottom: var(--space-md);
+            font-size: 1.15rem;
+        }
+
+        .qualifier-box--yes h3 {
+            color: var(--accent-sage);
+        }
+
+        .qualifier-box--no h3 {
+            color: var(--accent-terracotta);
+        }
+
+        .qualifier-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .qualifier-list li {
+            position: relative;
+            padding-left: 1.75rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .qualifier-list li::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .qualifier-box--yes .qualifier-list li::before {
+            content: '✓';
+            color: var(--accent-sage);
+        }
+
+        .qualifier-box--no .qualifier-list li::before {
+            content: '×';
+            color: var(--accent-terracotta);
+        }
+
+        .qualifier-closing {
+            margin-top: var(--space-xl);
+            font-size: 1.1rem;
+            font-style: italic;
+            text-align: center;
+            color: var(--text-body);
+        }
+
+        /* ============================================
+           VICTOR'S STORY SECTION - Side by Side
+           ============================================ */
+        .story-section {
+            background: var(--bg-primary);
+        }
+
+        .story-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .story-layout {
+                grid-template-columns: 420px 1fr;
+                gap: var(--space-2xl);
+            }
+        }
+
+        .story-image-wrapper {
+            position: relative;
+            max-width: 420px;
+            margin: 0 auto;
+        }
+
+        .story-image-bg {
+            position: absolute;
+            top: 10%;
+            left: -10%;
+            width: 100%;
+            height: 100%;
+            background: var(--accent-sage-light);
+            border-radius: var(--radius-md);
+            z-index: 0;
+        }
+
+        .story-image-container {
+            position: relative;
+            z-index: 1;
+            aspect-ratio: 3/4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .story-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: var(--radius-md);
+        }
+
+        .story-content h2 {
+            margin-bottom: var(--space-md);
+        }
+
+        .story-text {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .story-text p {
+            margin-bottom: var(--space-md);
+        }
+
+        /* ============================================
+           MATERIALS SECTION
+           ============================================ */
+        .materials-section {
+            background: var(--bg-secondary);
+        }
+
+        .materials-layout {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xl);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .materials-content {
+            text-align: center;
+        }
+
+        .materials-content h2 {
+            margin-bottom: var(--space-xs);
+        }
+
+        .materials-intro {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            margin-bottom: var(--space-lg);
+            font-style: italic;
+        }
+
+        .materials-list {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 0.75rem;
+        }
+
+        .material-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            padding: var(--space-sm) var(--space-md);
+            background: var(--bg-card);
+            border-radius: var(--radius-sm);
+            border: 2px solid var(--black);
+            box-shadow: var(--shadow-hard-sm);
+            transition: transform 0.2s ease;
+        }
+
+        .material-item:hover {
+            transform: translate(-2px, -2px);
+        }
+
+        .material-check {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--accent-sage);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            border: 2px solid var(--black);
+        }
+
+        .material-text {
+            flex: 1;
+        }
+
+        .material-text strong {
+            color: var(--text-heading);
+        }
+
+        .material-text span {
+            color: var(--text-light);
+        }
+
+        .materials-aside {
+            background: var(--bg-card);
+            border: 3px solid var(--black);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-hard);
+            padding: var(--space-lg);
+        }
+
+        .materials-aside h3 {
+            margin-bottom: var(--space-sm);
+            color: var(--accent-sage);
+        }
+
+        .materials-aside p {
+            font-size: 0.95rem;
+            color: var(--text-body);
+        }
+
+        /* ============================================
+           REGISTRATION FORM SECTION
+           ============================================ */
+        .form-section {
+            background: var(--bg-accent);
+        }
+
+        .form-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-xl);
+            align-items: start;
+        }
+
+        @media (min-width: 900px) {
+            .form-layout {
+                grid-template-columns: 1fr 450px;
+                gap: var(--space-2xl);
+            }
+        }
+
+        .form-intro h2 {
+            margin-bottom: var(--space-md);
+        }
+
+        .form-intro p {
+            font-size: 1.1rem;
+            color: var(--text-body);
+            margin-bottom: var(--space-md);
+        }
+
+        .form-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .form-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .form-features li::before {
+            content: '✓';
+            width: 24px;
+            height: 24px;
+            background: var(--accent-sage);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .form-container {
+            background: var(--bg-card);
+            border: 3px solid var(--black);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-hard);
+            padding: var(--space-lg);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        .form-header h3 {
+            font-size: 1.4rem;
+            margin-bottom: var(--space-xs);
+        }
+
+        .form-header p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .form-step {
+            margin-bottom: var(--space-md);
+        }
+
+        .form-step-label {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-bottom: var(--space-sm);
+            display: block;
+        }
+
+        .date-options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .date-option {
+            position: relative;
+        }
+
+        .date-option input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .date-option label {
+            display: block;
+            padding: var(--space-sm) var(--space-md);
+            background: var(--bg-card);
+            border: 2px solid var(--border-subtle);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .date-option label:hover {
+            border-color: var(--accent-terracotta);
+            background: var(--accent-terracotta-light);
+        }
+
+        .date-option input:checked + label {
+            border-color: var(--accent-terracotta);
+            background: var(--accent-terracotta-light);
+        }
+
+        .date-main {
+            font-weight: 700;
+            color: var(--text-heading);
+            font-size: 0.95rem;
+        }
+
+        .date-sub {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .form-fields {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-bottom: 0.25rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            border: 2px solid var(--border-subtle);
+            border-radius: var(--radius-sm);
+            background: var(--white);
+            transition: border-color 0.2s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent-terracotta);
+        }
+
+        .form-submit {
+            margin-top: var(--space-md);
+        }
+
+        .btn-full {
+            width: 100%;
+        }
+
+        .form-privacy {
+            margin-top: var(--space-sm);
+            font-size: 0.8rem;
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: var(--space-xl);
+        }
+
+        .success-message.show {
+            display: block;
+            animation: popIn 0.4s ease;
+        }
+
+        @keyframes popIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .success-message h3 {
+            color: var(--accent-sage);
+            font-size: 1.8rem;
+            margin-bottom: var(--space-md);
+        }
+
+        /* ============================================
+           FINAL REASSURANCE
+           ============================================ */
+        .reassurance-section {
+            background: var(--bg-primary);
+            text-align: center;
+        }
+
+        .reassurance-section h2 {
+            margin-bottom: var(--space-md);
+        }
+
+        .reassurance-section p {
+            max-width: 560px;
+            margin: 0 auto var(--space-lg);
+            font-size: 1.05rem;
+            color: var(--text-body);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--black);
+            color: rgba(255, 255, 255, 0.7);
+            padding: var(--space-lg) 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-sm);
+            text-align: center;
+        }
+
+        @media (min-width: 640px) {
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .footer-brand {
+            color: var(--white);
+            font-family: var(--font-heading);
+            font-size: 1rem;
+        }
+
+        .footer-email {
+            color: var(--accent-terracotta);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-email:hover {
+            color: var(--white);
+        }
+
+        /* ============================================
+           ANIMATIONS
+           ============================================ */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger > *:nth-child(1) { transition-delay: 0.05s; }
+        .stagger > *:nth-child(2) { transition-delay: 0.1s; }
+        .stagger > *:nth-child(3) { transition-delay: 0.15s; }
+        .stagger > *:nth-child(4) { transition-delay: 0.2s; }
+
+        /* Hero animations */
+        .hero-animate {
+            animation: heroIn 0.7s ease-out forwards;
+            opacity: 0;
+        }
+        .hero-animate-1 { animation-delay: 0.1s; }
+        .hero-animate-2 { animation-delay: 0.2s; }
+        .hero-animate-3 { animation-delay: 0.3s; }
+        .hero-animate-4 { animation-delay: 0.4s; }
+
+        @keyframes heroIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ============================================
+           ACCESSIBILITY
+           ============================================ */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+            html { scroll-behavior: auto; }
+            .ticker-track { animation: none; }
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--accent-terracotta);
+            outline-offset: 2px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            padding: 8px 16px;
+            background: var(--accent-terracotta);
+            color: var(--white);
+            z-index: 1001;
+            font-weight: 600;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#registration" class="skip-link">Skip to registration</a>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <img src="pottery-academy-logo.png" alt="The Pottery Academy" class="nav-logo">
+            </a>
+            <a href="#registration" class="nav-cta">Save My Spot</a>
+        </div>
+    </nav>
+    <div class="nav-spacer"></div>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-animate hero-animate-1">Find Your Calm<br>Through <span class="italic-accent">Clay</span></h1>
+
+                <p class="hero-subheadline hero-animate hero-animate-2">
+                    A free 90-minute online workshop where you'll make Christmas ornaments with your hands — and finally give your racing mind a rest.
+                </p>
+
+                <div class="hero-chips hero-animate hero-animate-3">
+                    <span class="chip">📅 Two date options</span>
+                    <span class="chip">⏱️ 90 mins</span>
+                    <span class="chip">💻 Online</span>
+                    <span class="chip">🎁 Free</span>
+                </div>
+
+                <div class="hero-cta-group hero-animate hero-animate-4">
+                    <a href="#registration" class="btn btn-primary">Save My Spot</a>
+                </div>
+                <p class="hero-reassurance hero-animate hero-animate-4">No experience needed. Really.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrolling Ticker -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <div class="ticker-content">
+                <span class="ticker-item"><span class="ticker-star">✦</span> RELAXATION</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> CREATIVITY</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> HANDMADE</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> MINDFULNESS</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> CALM</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> CLAY</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> CHRISTMAS</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> ORNAMENTS</span>
+            </div>
+            <div class="ticker-content">
+                <span class="ticker-item"><span class="ticker-star">✦</span> RELAXATION</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> CREATIVITY</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> HANDMADE</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> MINDFULNESS</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> CALM</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> CLAY</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> CHRISTMAS</span>
+                <span class="ticker-item"><span class="ticker-star">✦</span> ORNAMENTS</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         BENEFITS SECTION (Replaces Stats)
+         ============================================ -->
+    <section class="section benefits-section">
+        <div class="container">
+            <div class="benefits-header fade-in">
+                <h2>Why People Love This Workshop</h2>
+                <p>Here's what makes this 90 minutes different from watching another YouTube video.</p>
+            </div>
+
+            <div class="benefits-grid stagger">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🧘</div>
+                    <h3>Instant Calm</h3>
+                    <p>Feel your mind quiet down within the first 10 minutes of working with clay.</p>
+                </div>
+
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🎄</div>
+                    <h3>Take-Home Treasures</h3>
+                    <p>Leave with handmade ornaments for your tree or meaningful gifts for loved ones.</p>
+                </div>
+
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">👋</div>
+                    <h3>No Special Equipment</h3>
+                    <p>Just a table, some clay, and a few household items you probably already have.</p>
+                </div>
+
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Guided Every Step</h3>
+                    <p>Follow along live with Victor — no guesswork, no getting stuck.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHAT YOU'LL EXPERIENCE
+         ============================================ -->
+    <section class="section experience-section">
+        <div class="container">
+            <div class="experience-header">
+                <h2 class="fade-in">What You'll Experience</h2>
+                <p class="fade-in">This isn't a lecture. It's 90 minutes where you actually <em>make something</em> with your hands.</p>
+            </div>
+
+            <div class="experience-grid stagger">
+                <article class="experience-card fade-in">
+                    <h3>"Your hands get busy. Your mind gets quiet."</h3>
+                    <p>There's something about shaping clay that makes the to-do list fade. You'll feel it within the first ten minutes.</p>
+                </article>
+
+                <article class="experience-card fade-in">
+                    <h3>"You'll make ornaments you're proud of."</h3>
+                    <p>Stars, hearts, textured pieces — handmade decorations for your tree or gifts for people you love.</p>
+                </article>
+
+                <article class="experience-card fade-in">
+                    <h3>"You'll learn skills that stick."</h3>
+                    <p>Rolling, shaping, texturing, finishing. You'll know how to do this again whenever you need it.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         WHO THIS IS FOR
+         ============================================ -->
+    <section class="section qualifier-section">
+        <div class="container">
+            <h2 class="fade-in">Is this for you?</h2>
+
+            <div class="qualifier-grid">
+                <div class="qualifier-box qualifier-box--yes fade-in">
+                    <h3>✓ This IS for you if...</h3>
+                    <ul class="qualifier-list">
+                        <li>You find it hard to switch off from work and screens</li>
+                        <li>You've wanted to try pottery but felt intimidated</li>
+                        <li>You're looking for something calming that isn't meditation</li>
+                        <li>You want to make a handmade gift this Christmas</li>
+                        <li>You're a complete beginner</li>
+                    </ul>
+                </div>
+
+                <div class="qualifier-box qualifier-box--no fade-in">
+                    <h3>× This probably ISN'T for you if...</h3>
+                    <ul class="qualifier-list">
+                        <li>You're looking for advanced pottery techniques</li>
+                        <li>You want a productivity hack or quick fix</li>
+                        <li>You can't set aside 90 uninterrupted minutes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="qualifier-closing fade-in">Still here? Good. Let me tell you why I'm doing this.</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         VICTOR'S STORY
+         ============================================ -->
+    <section class="section story-section">
+        <div class="container">
+            <div class="story-layout">
+                <div class="story-image-wrapper fade-in">
+                    <div class="story-image-bg"></div>
+                    <div class="story-image-container">
+                        <img src="Victor-image.png" alt="Victor, pottery instructor">
+                    </div>
+                </div>
+
+                <div class="story-content fade-in">
+                    <h2>Hi, I'm Victor.</h2>
+                    <div class="story-text">
+                        <p>I'm a neuroscientist at UCL. I spend my days studying how brains learn and remember things.</p>
+
+                        <p>But a few years ago, I couldn't get my own brain to stop racing.</p>
+
+                        <p>In 2013, during one of the hardest periods of my life, my therapist brought clay to our session. She was an art therapist, and that day she handed me a lump of soft clay.</p>
+
+                        <p>The moment my hands touched it, something shifted. For the first time in months, my mind went quiet.</p>
+
+                        <p>That single session changed everything. I studied with a local sculptor for three and a half years. Pottery became my way of finding calm — not through thinking, but through making.</p>
+
+                        <p>I spent years figuring out what actually works — especially for people doing this at home, without a studio or kiln.</p>
+
+                        <p><strong>This workshop is what I wish someone had offered me back then.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         MATERIALS
+         ============================================ -->
+    <section class="section materials-section">
+        <div class="container">
+            <div class="materials-layout">
+                <div class="materials-content">
+                    <h2 class="fade-in">What you'll need</h2>
+                    <p class="materials-intro fade-in">(Most of it's already in your kitchen)</p>
+
+                    <div class="materials-list stagger">
+                        <div class="material-item fade-in">
+                            <span class="material-check">✓</span>
+                            <div class="material-text">
+                                <strong>Air dry clay</strong> <span>— about 1kg</span>
+                            </div>
+                        </div>
+                        <div class="material-item fade-in">
+                            <span class="material-check">✓</span>
+                            <div class="material-text">
+                                <strong>Rolling pin</strong> <span>— or a wine bottle</span>
+                            </div>
+                        </div>
+                        <div class="material-item fade-in">
+                            <span class="material-check">✓</span>
+                            <div class="material-text">
+                                <strong>Cookie cutters or knife</strong> <span>— for shapes</span>
+                            </div>
+                        </div>
+                        <div class="material-item fade-in">
+                            <span class="material-check">✓</span>
+                            <div class="material-text">
+                                <strong>Skewer or straw</strong> <span>— for hanging holes</span>
+                            </div>
+                        </div>
+                        <div class="material-item fade-in">
+                            <span class="material-check">✓</span>
+                            <div class="material-text">
+                                <strong>Small bowl of water</strong>
+                            </div>
+                        </div>
+                        <div class="material-item fade-in">
+                            <span class="material-check">✓</span>
+                            <div class="material-text">
+                                <strong>Baking paper</strong> <span>— or clean surface</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="materials-aside fade-in">
+                    <h3>That's it!</h3>
+                    <p>No kiln. No pottery wheel. No special studio. Just your table.</p>
+                    <p style="margin-top: 1rem;"><strong>Clay tip:</strong> I recommend Scola air dry clay. I'll send you a full list of materials with links after you register.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         REGISTRATION FORM
+         ============================================ -->
+    <section id="registration" class="section form-section">
+        <div class="container">
+            <div class="form-layout">
+                <div class="form-intro fade-in">
+                    <h2>Ready to try it?</h2>
+                    <p>Join the next free workshop and discover why working with clay is the best way to quiet your mind.</p>
+
+                    <ul class="form-features">
+                        <li>Live, guided session via Google Meet</li>
+                        <li>Make 3-5 ornaments to keep</li>
+                        <li>Ask questions in real-time</li>
+                    </ul>
+                </div>
+
+                <div class="form-container fade-in">
+                    <div class="form-header">
+                        <h3>Save Your Spot</h3>
+                        <p>Pick your date below</p>
+                    </div>
+
+                    <form id="workshop-form">
+                        <div class="form-step">
+                            <span class="form-step-label">Which session?</span>
+                            <div class="date-options">
+                                <div class="date-option">
+                                    <input type="radio" id="date-dec21" name="date" value="dec-21" required>
+                                    <label for="date-dec21">
+                                        <div class="date-main">Sunday, December 21st — 2:00 PM UK</div>
+                                        <div class="date-sub">A cosy Sunday afternoon</div>
+                                    </label>
+                                </div>
+                                <div class="date-option">
+                                    <input type="radio" id="date-dec22" name="date" value="dec-22">
+                                    <label for="date-dec22">
+                                        <div class="date-main">Monday, December 22nd — 7:00 PM UK</div>
+                                        <div class="date-sub">Ornaments ready by Christmas Eve</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-step">
+                            <span class="form-step-label">Your details</span>
+                            <div class="form-fields">
+                                <div class="form-group">
+                                    <label for="name">First name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your first name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-full">Save My Spot</button>
+                        </div>
+
+                        <p class="form-privacy">You'll also be added to my newsletter. Unsubscribe anytime.</p>
+                    </form>
+
+                    <div class="success-message" id="success-message">
+                        <h3>You're in!</h3>
+                        <p>Check your inbox for the confirmation with your Google Meet link.</p>
+                        <p><em>(Check spam if you don't see it)</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FINAL REASSURANCE
+         ============================================ -->
+    <section class="section reassurance-section">
+        <div class="container">
+            <h2 class="fade-in">Never worked with clay before?</h2>
+            <p class="fade-in">
+                Perfect. This workshop is designed for complete beginners. I'll guide you through every step, and clay is wonderfully forgiving — if something doesn't look right, you just reshape it.
+            </p>
+            <a href="#registration" class="btn btn-primary fade-in">Save My Spot</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-brand">The Pottery Academy · Made with care in London</span>
+                <span>Questions? <a href="mailto:hello@thepotteryacademy.com" class="footer-email">hello@thepotteryacademy.com</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: '-50px', threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+            // Form handling - ConvertKit integration
+            const form = document.getElementById('workshop-form');
+            const success = document.getElementById('success-message');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                // Get form data
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const dateRadio = document.querySelector('input[name="date"]:checked');
+
+                if (!dateRadio) {
+                    alert('Please select a workshop date');
+                    return;
+                }
+
+                const isDec21 = dateRadio.value === 'dec-21';
+                const workshopDate = isDec21
+                    ? 'Sunday, December 21st - 2:00 PM UK'
+                    : 'Monday, December 22nd - 7:00 PM UK';
+                const dateTagId = isDec21 ? '13352027' : '13352028';
+
+                // Show loading state
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Saving...';
+
+                try {
+                    // Subscribe to main workshop tag
+                    const response1 = await fetch('https://api.convertkit.com/v3/tags/13349785/subscribe', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            api_key: 'Zg7qUWZ12D2zGZg0yovECw',
+                            email: email,
+                            first_name: name,
+                            fields: { workshop_date: workshopDate }
+                        })
+                    });
+
+                    // Subscribe to date-specific tag
+                    const response2 = await fetch(`https://api.convertkit.com/v3/tags/${dateTagId}/subscribe`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            api_key: 'Zg7qUWZ12D2zGZg0yovECw',
+                            email: email
+                        })
+                    });
+
+                    const response = response1;
+
+                    if (response.ok) {
+                        form.style.display = 'none';
+                        success.classList.add('show');
+                    } else {
+                        throw new Error('Subscription failed');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('Something went wrong. Please try again or email hello@thepotteryacademy.com');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalBtnText;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
