@@ -28,7 +28,7 @@ You're all set for the One Word workshop.
 - **Where:** Online via Google Meet
 
 **Your workshop link:**
-[PLACEHOLDER: INSERT GOOGLE MEET LINK FOR JAN 3]
+https://meet.google.com/cbs-wano-gpb
 
 Save this somewhere safe. I'll send you a materials list shortly.
 
@@ -59,7 +59,7 @@ Here's everything you'll need for the workshop:
 That's it. No kiln, no wheel, no special equipment.
 
 **Your workshop link:**
-[PLACEHOLDER: INSERT GOOGLE MEET LINK FOR JAN 3]
+https://meet.google.com/cbs-wano-gpb
 
 See you Saturday,
 Victor
@@ -78,7 +78,7 @@ Quick reminder — we're making your word piece together tomorrow.
 
 **Workshop details:**
 - **When:** Saturday, 3rd January at 2:00 PM UK
-- **Link:** [PLACEHOLDER: INSERT GOOGLE MEET LINK FOR JAN 3]
+- **Link:** https://meet.google.com/cbs-wano-gpb
 
 **Quick checklist:**
 - [ ] Air dry clay (250g)
@@ -104,7 +104,7 @@ Hey {{ subscriber.first_name }},
 
 Today's the day. We start at 2:00 PM UK.
 
-**Click here to join:** [PLACEHOLDER: INSERT GOOGLE MEET LINK FOR JAN 3]
+**Click here to join:** https://meet.google.com/cbs-wano-gpb
 
 I'd suggest joining 5 minutes early so you're set up when we begin.
 
@@ -138,7 +138,7 @@ You're all set for the One Word workshop.
 - **Where:** Online via Google Meet
 
 **Your workshop link:**
-[PLACEHOLDER: INSERT GOOGLE MEET LINK FOR JAN 4]
+https://meet.google.com/ted-pxvs-ewj
 
 Save this somewhere safe. I'll send you a materials list shortly.
 
@@ -169,7 +169,7 @@ Here's everything you'll need for the workshop:
 That's it. No kiln, no wheel, no special equipment.
 
 **Your workshop link:**
-[PLACEHOLDER: INSERT GOOGLE MEET LINK FOR JAN 4]
+https://meet.google.com/ted-pxvs-ewj
 
 See you Sunday,
 Victor
@@ -188,7 +188,7 @@ Quick reminder — we're making your word piece together tomorrow.
 
 **Workshop details:**
 - **When:** Sunday, 4th January at 2:00 PM UK
-- **Link:** [PLACEHOLDER: INSERT GOOGLE MEET LINK FOR JAN 4]
+- **Link:** https://meet.google.com/ted-pxvs-ewj
 
 **Quick checklist:**
 - [ ] Air dry clay (250g)
@@ -214,7 +214,7 @@ Hey {{ subscriber.first_name }},
 
 Today's the day. We start at 2:00 PM UK.
 
-**Click here to join:** [PLACEHOLDER: INSERT GOOGLE MEET LINK FOR JAN 4]
+**Click here to join:** https://meet.google.com/ted-pxvs-ewj
 
 I'd suggest joining 5 minutes early so you're set up when we begin.
 
@@ -258,7 +258,7 @@ This workshop is my favourite way to start a new year. Two hours, your kitchen t
 
 No experience needed. I'll guide you through everything.
 
-[PLACEHOLDER: LINK TO LANDING PAGE]
+https://shape-your-word.vercel.app/
 
 Victor
 
@@ -286,7 +286,7 @@ By the end, you'll have a small piece with your word carved in — something to 
 
 **Saturday 3rd or Sunday 4th January, 2pm UK. Free.**
 
-[PLACEHOLDER: LINK TO LANDING PAGE]
+https://shape-your-word.vercel.app/
 
 Victor
 
@@ -310,7 +310,7 @@ Two hours. Your kitchen table. A piece of clay and a word that matters to you.
 
 If you've been thinking about it, this is the nudge.
 
-[PLACEHOLDER: LINK TO LANDING PAGE]
+https://shape-your-word.vercel.app/
 
 Victor
 
